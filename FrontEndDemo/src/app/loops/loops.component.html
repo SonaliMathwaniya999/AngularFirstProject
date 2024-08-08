@@ -1,0 +1,28 @@
+<p>loops works!</p>
+
+<h1>{{users}}</h1>  <br><br>
+<h1  *ngFor="let user of users">
+
+    {{user}}
+</h1>
+
+
+<h1  *ngFor="let person of personDetails">
+
+    {{person.name}} ----  {{person.email}} ----  {{person.phone}}
+</h1>
+
+
+
+<h1>-----------------------------------------------------------</h1>
+
+<h1  *ngFor="let utd of userdetailsNested">
+<ul>
+   <li> {{utd.name}} </li>
+   <li> {{utd.email}} </li>
+   <ul  *ngFor = "let phone of utd.phone">
+   <li> {{phone}}</li>
+</ul>
+</ul>
+
+</h1>

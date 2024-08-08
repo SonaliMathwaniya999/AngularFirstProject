@@ -1,0 +1,18 @@
+<p>if-else works!</p>
+
+<h1 *ngIf="show1; then ifBlock else elseBlock">my name is ram or shyam if block</h1>
+
+
+<ng-template #ifBlock>
+    <h1>if block condition</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h1>Else condition</h1>
+</ng-template>
+
+<!-- 
+<h1 *ngIf="show2"> if block2</h1>
+
+
+<h1 *ngIf="show3"> if block3</h1> -->

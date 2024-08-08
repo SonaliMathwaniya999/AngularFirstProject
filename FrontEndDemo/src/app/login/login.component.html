@@ -1,0 +1,32 @@
+<h1>welcome to login page {{ 10  ?true:false}}</h1>
+
+<!-- <input type="text" name="user_name"  value={{name}}  disabled={{disable}}> <br>
+
+It  is interpolation-
+<input type="text" name="user_name"  [value]=name     [disabled]=disable> -->
+<!--It  is property binding--->
+ <!-- <h1>
+Name : {{username}}
+Email : {{email}} </h1>
+
+<input type="text"   [(ngModule)]="username" >
+<input type="text"  [(ngModule)]="email" >
+ -->
+<!-- 
+ <div>
+<br><br>
+  Name :  <input type="text" name="" ><br>
+  password :  <input type="text">
+ <br>
+  <button   onclick="onButtonClick()"   >Login</button>
+  <br>
+  {{msg}}
+</div>
+ -->
+<h1>{{title}}</h1>
+<input type="text"  (keyup)="getDone()"    [(ngModel)]="name"  placeholder="Firsname">
+<p>{{name}}</p>
+
+
+<button (click)="getDone()"  >click here</button>
+
